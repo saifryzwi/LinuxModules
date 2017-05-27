@@ -1,4 +1,4 @@
-# Array Module
+# Array Sort Module
 Module to find sum and product of an array
 
 ## Compiling Linux Module (Makefile)
