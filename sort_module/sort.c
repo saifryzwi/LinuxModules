@@ -21,14 +21,14 @@ MODULE_PARM_DESC(count, "the integer to store number of entries in array");
 module_param_array(a, int, &count, 0);
 MODULE_PARM_DESC(a, "the integer array");
 
-static int __init init_sum(void) {
-    sort_array();
-    show_array();
+static int __init init_sort(void) {
+	sort_array();
+	show_array();
 	return 0;
 }
 
-static void __exit exit_sum(void) {
-	printk(KERN_INFO "exiting array module...");
+static void __exit exit_sort(void) {
+	printk(KERN_INFO "exiting array sort module...");
 }
 
 static void sort_array(void) {
@@ -51,8 +51,8 @@ static void show_array(void) {
     }
 }
 
-module_init(init_sum);
-module_exit(exit_sum);
+module_init(init_sort);
+module_exit(exit_sort);
 
 MODULE_LICENSE(LICENSE);
 MODULE_AUTHOR(AUTHOR);
