@@ -1,5 +1,5 @@
 # Array Sort Module
-Module to find sum and product of an array
+Module to sort elements of array in ascending order
 
 ## Compiling Linux Module (Makefile)
 ```
