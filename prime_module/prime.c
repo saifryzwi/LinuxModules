@@ -26,7 +26,7 @@ static int __init init_prime(void) {
 }
 
 static void __exit exit_prime(void) {
-	printk(KERN_INFO "exiting factorial module...");
+	printk(KERN_INFO "exiting prime module...");
 }
 
 static int is_prime(int n) {
