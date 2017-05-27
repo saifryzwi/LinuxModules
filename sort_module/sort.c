@@ -34,7 +34,7 @@ static void __exit exit_sort(void) {
 static void sort_array(void) {
     int i, j, temp;
     for (i = 0; i < count - 1; i++) {
-        for (j = 1 + 1; j < count; j++) {
+        for (j = i + 1; j < count; j++) {
             if (a[i] > a[j]) {
                 temp = a[i];
                 a[i] = a[j];
